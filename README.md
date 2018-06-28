@@ -6,11 +6,24 @@ Include at the end of your **.bash_profile** and it will work very well. To do i
 ## Step 1 - Check if your .bash_profile exists
 
 Check if it exists using the command:
-```ls ~/.bash_profile```
+
+```
+ls ~/.bash_profile
+```
+
 If your .bash_profile doesn't exists, execute:
-```touch ~/.bash_profile```
+```
+touch ~/.bash_profile
+```
 
 ## Step 2 - Include the code to show the Git Branches
+
+With the command vim, open the file ~/.bash_profile:
+
+```
+vim ~/.bash_profile
+```
+Insert the code below in the end of the file:
 
 ``` 
 parse_git_branch() {
